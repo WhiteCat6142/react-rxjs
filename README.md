@@ -13,6 +13,21 @@ Currently, two official plugins are available:
 npm create vite
 ```
 
+ [server option](https://ja.vitejs.dev/config/server-options.html)
+vite.config.js
+```json
+  server: {
+    host: '0.0.0.0'
+  },
+```
+
+ [npm run dev で起動するブラウザを変更する](https://zenn.dev/snowcait/articles/3cad63d441e0c7)
+.env
+```env
+BROWSER=firefox
+```
+
+
 eslint alredy is installed if using template.
 
 ### husky
