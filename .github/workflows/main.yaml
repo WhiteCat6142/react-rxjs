@@ -18,7 +18,7 @@ jobs:
         uses: actions/cache@v3
         id: cache
         with:
-          path: node_modules
+          path: '**/node_modules'
           key: id-${{ hashFiles('package-lock.json') }}
       - name: Setup
         uses: actions/setup-node@v3
