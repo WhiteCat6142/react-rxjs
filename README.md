@@ -86,3 +86,20 @@ package.json
       { vars: 'local', "argsIgnorePattern":"^_", "varsIgnorePattern": "^_" }
     ]
 ```
+ [ ESlint module.exports が no-undef なエラーになるとき ](https://chaika.hatenablog.com/entry/2020/04/13/130000)
+
+.eslintrc.cjs
+```json
+env: {
+  "node": true
+}
+```
+
+### PostCSS tailwindcss daisyUI
+
+ [Install daisyUI as a Tailwind CSS plugin](https://daisyui.com/docs/install/)
+ [Configuration](https://tailwindcss.com/docs/configuration)
+ [postcss](https://github.com/postcss/postcss)
+ [theme-change](https://github.com/saadeghi/theme-change)
+ [Tailwind CSSでダークモード](https://zenn.dev/azukiazusa/articles/bee71756d66679)
+configure tailwind.config.js & postcss.config.js as files in this repo.

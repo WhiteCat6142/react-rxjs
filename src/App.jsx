@@ -16,6 +16,8 @@ import './App.css'
 import { useEventCallback, useObservable } from "rxjs-hooks";
 import { map, debounceTime, distinctUntilChanged, switchMap } from "rxjs/operators";
 
+import { themeChange } from 'theme-change'
+
 const useSearch = () =>
   useEventCallback(
     (word$) =>
@@ -29,7 +31,7 @@ const useSearch = () =>
 
 const Search = ({ word, changeInput }) => (
   <div>
-    <input onChange={(e) => changeInput(e.target.value)} />
+    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" onChange={(e) => changeInput(e.target.value)} />
   </div>
 )
 
@@ -40,10 +42,16 @@ Search.propTypes = {
 
 const App = () => {
   const [setWords,words] = useSearch()
+  React.useEffect(() => {
+    themeChange(false)
+  }, [])
   return (
     <div>
       <Search changeInput={setWords} word={words} />
       <div>{words.toString()}</div>
+      <button className="btn" data-set-theme="" data-act-class="ACTIVECLASS">Reset</button>
+      <button className="btn" data-set-theme="dark" data-act-class="ACTIVECLASS">Dark</button>
+      <button className="btn" data-set-theme="light" data-act-class="ACTIVECLASS">Light</button>
     </div>
   )
 }
