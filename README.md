@@ -18,7 +18,7 @@ vite.config.js
 ```json
   server: {
     host: '0.0.0.0'
-  },
+  }
 ```
 
  [npm run dev で起動するブラウザを変更する](https://zenn.dev/snowcait/articles/3cad63d441e0c7)
@@ -91,15 +91,21 @@ package.json
 .eslintrc.cjs
 ```json
 env: {
-  "node": true
+  node: true
 }
 ```
 
-### PostCSS tailwindcss daisyUI
+### PostCSS tailwindcss daisyUI & theme
 
  [Install daisyUI as a Tailwind CSS plugin](https://daisyui.com/docs/install/)
  [Configuration](https://tailwindcss.com/docs/configuration)
  [postcss](https://github.com/postcss/postcss)
  [theme-change](https://github.com/saadeghi/theme-change)
  [Tailwind CSSでダークモード](https://zenn.dev/azukiazusa/articles/bee71756d66679)
+
 configure tailwind.config.js & postcss.config.js as files in this repo.
+
+### Github Actions
+
+ [静的サイトのデプロイ ](https://ja.vitejs.dev/guide/static-deploy.html)
+ [Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs)
