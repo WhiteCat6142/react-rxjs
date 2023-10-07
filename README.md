@@ -109,3 +109,7 @@ configure tailwind.config.js & postcss.config.js as files in this repo.
 
  [静的サイトのデプロイ ](https://ja.vitejs.dev/guide/static-deploy.html)
  [Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs)
+ [GitHub Pages: Custom GitHub Actions Workflows (beta)](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/)
+ [GitHub ActionsでGitHub PagesにデプロイしようとしたらPermissionのエラーが出た](https://akihiro.dev/entries/github-pages-deploy-actions-permissions/)
+
+There are new official way for uploading github pages insted of peaceiris/actions-gh-pages . 
